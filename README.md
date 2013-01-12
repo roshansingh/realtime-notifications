@@ -32,3 +32,15 @@ Start the server by
 	sudo nodejs server.js
 
 Now hit `http://localhost` on your browser
+
+## Server side flow
+When the server starts, an http handler is created whose only task currently is to server index.html. 
+
+There is socket.io handler which listens to all the websocket connections and manages them. It subscribes them to appropricate rooms and sends updates.
+
+Lastly there are two redis clients one of which subscribes to channels on redis and as soon as a message is received, it broadcasts them in appropricate rooms. The second client simply publishes dummy updates to redis channels to which the first redis client is subscribed to.
+
+## Client side flow
+As soon as the page load is done, socket.io client tries to connect to the server and on connection sends subscribe message for a particular channel. When updates are received it displays them
+
+I have documented the code as extensively as I could. Please email me in case of doubts.  
