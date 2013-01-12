@@ -14,8 +14,9 @@ Socket.io is used to maintain connection with the user. It uses websockets if av
 
 
 ## Installation
-For `redis` http://redis.io/download
-For `nodejs` http://nodejs.org/download
+For installing `redis` visit http://redis.io/download
+
+For installing `nodejs` visit http://nodejs.org/download
 
 If you are on linux, you can use package manager of your distribution to install `redis` and `nodejs`.
 
