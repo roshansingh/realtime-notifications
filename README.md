@@ -14,18 +14,20 @@ Socket.io is used to maintain connection with the user. It uses websockets if av
 
 
 ## Installation
-For redis http://redis.io/download
-For nodejs http://nodejs.org/download
+For `redis` http://redis.io/download
+For `nodejs` http://nodejs.org/download
 
 If you are on linux, you can use package manager of your distribution to install `redis` and `nodejs`.
 
 Use npm to install nodejs dependencies
+
 	npm install redis socket.io
 
 You may want to use `hiredis` on production as explained on project page https://github.com/mranney/node_redis.
 
 ## Usage
 Start the server by 
+
 	cd server
 	sudo nodejs server.js
 
